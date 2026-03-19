@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+    /* COLORS */
+    --red-idle-btn:  #c30010;
+    --red-hover-btn: #8f000c;
+    --grey-border: #898d96;
+    
+    /* FONTS */
+    --font-xs: 12px;
+    --font-sn: 14px;
+    --font-base: 16px;
+    --font-lg: 18px
+    --font-xl:20px
+    --font-2xl: 24px
+}

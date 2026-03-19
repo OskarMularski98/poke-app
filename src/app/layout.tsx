@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
-import "./globals.css";
-
-const rubik = Rubik({
-  weight: ["400", "600", "700"],
-  subsets: ["latin"],
-});
+import "@/styles/globals.css";
+import { rubik } from "@/fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${rubik.className} antialiased bg-amber-50`}>
-        {children}
-      </body>
+      <body className={` ${rubik.className} bg-amber-50`}>{children}</body>
     </html>
   );
 }
