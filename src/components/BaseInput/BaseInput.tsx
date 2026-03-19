@@ -11,14 +11,17 @@ interface BaseInputProps {
 const BaseInput = memo(
   ({ value, onChange, onBlur, onFocus }: BaseInputProps) => {
     return (
-      <input
-        className={styles.container}
-        type="text"
-        value={value}
-        onChange={onChange}
-        onFocus={onFocus}
-        onBlur={onBlur}
-      />
+      <div className={styles.container}>
+        <input
+          className={styles.content}
+          type="text"
+          value={value}
+          onChange={onChange}
+          onFocus={onFocus}
+          onBlur={onBlur}
+        />
+        <button>Search</button>
+      </div>
     );
   },
 );

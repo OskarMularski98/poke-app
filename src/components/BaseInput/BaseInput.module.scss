@@ -1,10 +1,31 @@
 .container {
-  background-color: white;
-  border: 1px solid rgb(189, 189, 189);
-  border-radius: 25px;
+  position: relative;
+  display: inline-flex;
   width: 400px;
+}
+.content {
+  background-color: white;
+  border: 2px solid rgb(189, 189, 189);
+  border-radius: 25px;
+  width: 100%;
   padding: 12px 24px;
-  ::placeholder {
+  outline: none;
+  &::placeholder {
     color: rgb(189, 189, 189);
+  }
+}
+
+button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 25px 25px 0;
+  padding: 12px 24px;
+  background-color: rgb(227, 62, 62);
+  color: white;
+
+  &:hover {
+    background-color: rgb(128, 35, 35);
   }
 }

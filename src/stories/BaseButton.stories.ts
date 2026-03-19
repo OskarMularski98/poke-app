@@ -7,7 +7,6 @@ const meta = {
 } satisfies Meta<typeof BaseButton>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof BaseButton>;
 
-// Interact with the links to see the route change events in the Actions panel.
-export const Example: Story = {};
+export const Default: Story = {};
