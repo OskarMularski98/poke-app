@@ -20,7 +20,9 @@ const BaseInput = memo(
           onFocus={onFocus}
           onBlur={onBlur}
         />
-        <button>Search</button>
+        <button className={styles.button}>
+          <span>Search</span>
+        </button>
       </div>
     );
   },

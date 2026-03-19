@@ -5,27 +5,30 @@
 }
 .content {
   background-color: white;
-  border: 2px solid rgb(189, 189, 189);
+  border: 2px solid var(--grey-border);
   border-radius: 25px;
   width: 100%;
-  padding: 12px 24px;
+  padding: 12px 100px 12px 24px;
   outline: none;
+  box-shadow: inset 0 -2px 4px rgba(0,0,0,0.1);
   &::placeholder {
-    color: rgb(189, 189, 189);
+    color: var(--grey-border);
   }
 }
 
-button {
+.button {
+  transition: .3s all ease-out;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
   border-radius: 0 25px 25px 0;
   padding: 12px 24px;
-  background-color: rgb(227, 62, 62);
+  background-color: var(--red-idle-btn);
+  text-shadow:  0 1px 2px rgba(0, 0, 0, 0.5), 0 0 6px rgba(255, 255, 255, 0.8);
   color: white;
 
   &:hover {
-    background-color: rgb(128, 35, 35);
+    background-color: var(--red-hover-btn)
   }
 }
