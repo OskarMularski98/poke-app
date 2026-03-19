@@ -4,6 +4,7 @@ import BaseInput from "@/components/BaseInput/BaseInput";
 import { usePokeList } from "@/hooks/usePokeList";
 import Link from "next/link";
 import { ChangeEvent, useState } from "react";
+import styles from "./page.module.scss";
 
 export default function Home() {
   const { pokemons } = usePokeList();
@@ -26,15 +27,15 @@ export default function Home() {
   };
 
   return (
-    <div className=" h-screen">
-      <div className=" flex flex-col justify-center items-center">
+    <div className={styles.container}>
+      <div className={styles.content}>
         <BaseInput
           value={value}
           onChange={onChange}
           onBlur={() => setIsFocused(false)}
           onFocus={() => setIsFocused(true)}
         />
-        <div className=" flex  flex-col max-h-40 max-w-full px-10 overflow-y-scroll scroll-smooth">
+        <div className={styles.items}>
           {filteredPokemons?.map((pokemon, index) => (
             <Link
               href={{
