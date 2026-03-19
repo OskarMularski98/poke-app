@@ -1,4 +1,5 @@
 import { ChangeEvent, memo } from "react";
+import styles from "./BaseInput.module.scss";
 
 interface BaseInputProps {
   value: string;
@@ -11,7 +12,7 @@ const BaseInput = memo(
   ({ value, onChange, onBlur, onFocus }: BaseInputProps) => {
     return (
       <input
-        className="border  border-red-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+        className={styles.container}
         type="text"
         value={value}
         onChange={onChange}
