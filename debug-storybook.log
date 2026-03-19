@@ -1,0 +1,26 @@
+[12:47:35.103] [INFO] storybook v10.3.0
+[12:47:36.003] [DEBUG] Getting package.json info for C:/Users/omularski/Projects/poke-app/package.json...
+[12:47:36.022] [WARN] Could not resolve addon "@chromatic-com/storybook", skipping. Is it installed?
+[12:47:36.044] [ERROR] [38;2;241;97;97mSB_CORE-SERVER_0002 (CriticalPresetLoadError): Storybook failed to load the following preset: @storybook/nextjs-vite/preset.
+
+Please check whether your setup is correct, the Storybook dependencies (and their peer dependencies) are installed correctly and there are no package version clashes.
+
+If you believe this is a bug, please open an issue on Github.
+
+Error [ERR_REQUIRE_ESM]: require() of ES Module .\node_modules\vite-tsconfig-paths\dist\index.js from .\node_modules\vite-plugin-storybook-nextjs\dist\index.cjs not supported.
+Instead change the require of index.js in .\node_modules\vite-plugin-storybook-nextjs\dist\index.cjs to a dynamic import() which is available in all CommonJS modules.
+    at Object.<anonymous> (.\node_modules\vite-plugin-storybook-nextjs\dist\index.cjs:4:21)
+
+More info: 
+[39m
+    at loadPreset (file:///C:/Users/omularski/Projects/poke-app/node_modules/storybook/dist/_node-chunks/chunk-SZA5BLUA.js:10081:13)
+    at async Promise.all (index 0)
+    at async loadPresets (file:///C:/Users/omularski/Projects/poke-app/node_modules/storybook/dist/_node-chunks/chunk-SZA5BLUA.js:10090:73)
+    at async getPresets (file:///C:/Users/omularski/Projects/poke-app/node_modules/storybook/dist/_node-chunks/chunk-SZA5BLUA.js:10121:23)
+    at async buildDevStandalone (file:///C:/Users/omularski/Projects/poke-app/node_modules/storybook/dist/core-server/index.js:7964:52)
+    at async withTelemetry (file:///C:/Users/omularski/Projects/poke-app/node_modules/storybook/dist/_node-chunks/chunk-IWP5TMKY.js:218:12)
+    at async dev (file:///C:/Users/omularski/Projects/poke-app/node_modules/storybook/dist/bin/core.js:2736:3)
+    at async _Command.<anonymous> (file:///C:/Users/omularski/Projects/poke-app/node_modules/storybook/dist/bin/core.js:2806:92)
+[12:47:36.062] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.
+[12:47:36.066] [WARN] Could not resolve addon "@chromatic-com/storybook", skipping. Is it installed?

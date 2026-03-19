@@ -1,0 +1,10 @@
+.container {
+  background-color: white;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 25px;
+  width: 400px;
+  padding: 12px 24px;
+  ::placeholder {
+    color: rgb(189, 189, 189);
+  }
+}
